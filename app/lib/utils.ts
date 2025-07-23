@@ -1,3 +1,5 @@
+
+
 export function formatSize(bytes: number): string {
     if (bytes === 0) return '0 Bytes';
 
@@ -8,3 +10,5 @@ export function formatSize(bytes: number): string {
 
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 }
+
+export const generateUUID = () => crypto.randomUUID();

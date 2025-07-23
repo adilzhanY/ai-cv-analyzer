@@ -11,7 +11,7 @@ const FileUploader = ({onFileSelect} : FileUploaderProps) => {
         const file = acceptedFiles[0] || null;
         onFileSelect?.(file);
 
-    }, [onFileSelect])
+    }, [onFileSelect]);
     const maxFileSize = 20 * 1024 * 1024;
     const {getRootProps, getInputProps, isDragActive, acceptedFiles} = useDropzone({
         onDrop,
@@ -33,7 +33,7 @@ const FileUploader = ({onFileSelect} : FileUploaderProps) => {
                         <img src='/images/pdf.png' alt="pdf" className='size-10'/>
                         <div className='flex items-center space-x-3'>
                             <div>
-                                <p className='text-sm font-medium text-gray-700 font-medium truncate max-w-xs'>
+                                <p className='text-sm font-medium text-gray-700 truncate max-w-xs'>
                                     {file.name}
                                 </p>
                                 <p className='text-sm text-gray-500'>
