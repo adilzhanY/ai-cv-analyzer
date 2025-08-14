@@ -1,87 +1,74 @@
-# Welcome to React Router!
+# AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+This project is a web application that analyzes resumes using AI. It provides features like ATS-friendliness checks, keyword analysis, and a summary of the resume's content.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+*   **Resume Upload:** Users can upload their resumes in PDF format.
+*   **ATS-Friendliness Score:** The application provides a score indicating how well the resume is optimized for Applicant Tracking Systems (ATS).
+*   **Keyword Analysis:** It checks for the presence of important keywords relevant to the job description.
+*   **Resume Summary:** The tool generates a concise summary of the resume.
+*   **Detailed Analysis:** Provides a detailed breakdown of the resume's strengths and weaknesses.
 
 ## Getting Started
 
+### Prerequisites
+
+*   Node.js (v20 or later)
+*   npm
+
 ### Installation
 
-Install the dependencies:
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/adilzhanY/ai-cv-analyzer.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd ai-cv-analyzer
+    ```
+3.  Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm install
-```
+### Running the Application
 
-### Development
-
-Start the development server with HMR:
+To run the application in development mode, use the following command:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+This will start the development server, and you can view the application at `http://localhost:5173`.
 
-## Building for Production
-
-Create a production build:
+To build the application for production, use the following command:
 
 ```bash
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+To start the production server, use the following command:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm run start
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## Technologies Used
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+*   **React:** A JavaScript library for building user interfaces.
+*   **React Router:** For handling routing in the application.
+*   **Vite:** A fast build tool and development server.
+*   **TypeScript:** A typed superset of JavaScript.
+*   **Tailwind CSS:** A utility-first CSS framework.
+*   **Zustand:** A small, fast, and scalable state management solution for React.
+*   **PDF.js:** A library for parsing and rendering PDF files.
 
-### DIY Deployment
+## Project Structure
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+The project is organized into the following directories:
 
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+*   `app/`: Contains the main application logic, including components, routes, and utility functions.
+*   `constants/`: Contains constant values used throughout the application.
+*   `public/`: Contains static assets like images and icons.
+*   `types/`: Contains TypeScript type definitions.
