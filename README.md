@@ -76,3 +76,7 @@ The project is organized into the following directories:
 *   `constants/`: Contains constant values used throughout the application.
 *   `public/`: Contains static assets like images and icons.
 *   `types/`: Contains TypeScript type definitions.
+
+## Credits
+
+This project is inspired by the JavaScript Mastery React course, and was done only for learning purposes.
