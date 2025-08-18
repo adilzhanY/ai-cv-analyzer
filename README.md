@@ -2,6 +2,10 @@
 
 This project is a web application that analyzes resumes using AI. It provides features like ATS-friendliness checks, keyword analysis, and a summary of the resume's content.
 
+## Demo
+
+https://github.com/user-attachments/assets/d8b921af-2e45-4c6b-9fe3-aac64d83359f
+
 ## Features
 
 *   **Resume Upload:** Users can upload their resumes in PDF format.
